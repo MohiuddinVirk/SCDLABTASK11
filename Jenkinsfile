@@ -16,7 +16,7 @@ pipeline {
         
           stage('Docker Image') {
           steps {
-              sh 'echo docker_build_-t_SCDLABTASK11'
+              sh 'docker build -t SCDLABTASK11'
             }
           }
         
