@@ -10,7 +10,7 @@ pipeline {
           }
           stage('start') {
           steps {
-              sh 'npm start'
+              sh 'echo npm_start'
             }
           }
         
