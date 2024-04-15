@@ -8,17 +8,12 @@ pipeline {
               sh 'npm install'
             }
           }
-          stage('start') {
+          stage('build') {
           steps {
-              sh 'echo npm_start'
+              sh 'npm build'
             }
           }
         
-        stage('test') {
-          steps {
-              sh 'echo npm_test'
-            }
-          }
           stage('Docker Image') {
           steps {
               sh 'echo docker_build_-t_SCDLABTASK11'
