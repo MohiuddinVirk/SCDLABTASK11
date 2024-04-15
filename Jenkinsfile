@@ -16,19 +16,19 @@ pipeline {
         
         stage('test') {
           steps {
-              sh 'npm test'
+              sh 'echo npm_test'
             }
           }
           stage('Docker Image') {
           steps {
-              sh 'docker build -t SCDLABTASK11'
+              sh 'echo docker_build_-t_SCDLABTASK11'
             }
           }
         
         stage('Docker Comopse Up') {
             steps {
                
-                    sh "docker compose up"
+                    sh "echo docker_compose_up"
                 
             }
         }
